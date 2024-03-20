@@ -1,164 +1,28 @@
-import React, { useState } from 'react';
-import DateCalendarValue from '../components/component';
+import React from 'react';
+import '../App.css'
 import {
-  MDBContainer,
-  MDBTabs,
-  MDBTabsItem,
-  MDBTabsLink,
-  MDBTabsContent,
-  MDBTabsPane,
   MDBBtn,
-  MDBIcon,
-  MDBInput,
-  MDBCheckbox
+  MDBContainer,
+  MDBCard,
+  MDBCardBody,
+  MDBInput
 }
 from 'mdb-react-ui-kit';
 
 function App() {
-
-  const [justifyActive, setJustifyActive] = useState('tab1');;
-
-  const handleJustifyClick = (value) => {
-    if (value === justifyActive) {
-      return;
-    }
-
-    setJustifyActive(value);
-  };
-
   return (
-    <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
-
-      <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
-        <MDBTabsItem>
-          <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
-            Login
-          </MDBTabsLink>
-        </MDBTabsItem>
-        <MDBTabsItem>
-          <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
-            Register
-          </MDBTabsLink>
-        </MDBTabsItem>
-      </MDBTabs>
-
-      <MDBTabsContent>
-        
-        <MDBTabsPane show={justifyActive === 'tab1'}>
-
-          <div className="text-center mb-3">
-            <p>Sign in with:</p>
-
-            <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='facebook-f' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='twitter' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='google' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='github' size="sm"/>
-              </MDBBtn>
-            </div>
-
-            <p className="text-center mt-3">or:</p>
-          </div>
-
-          <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email'/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password'/>
-
-          <div className="d-flex justify-content-between mx-4 mb-4">
-            <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
-            <a href="!#">Forgot password?</a>
-          </div>
-
-          <MDBBtn className="mb-4 w-100">Sign in</MDBBtn>
-          <p className="text-center">Not a member? <a href="#!">Register</a></p>
-
-        </MDBTabsPane>
-
-        <MDBTabsPane show={justifyActive === 'tab2'}>
-
-          <div className="text-center mb-3">
-            <p>Sign un with:</p>
-
-            <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='facebook-f' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='twitter' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='google' size="sm"/>
-              </MDBBtn>
-
-              <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-                <MDBIcon fab icon='github' size="sm"/>
-              </MDBBtn>
-            </div>
-
-            <p className="text-center mt-3">or:</p>
-          </div>
-
-          <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text'/>
-          <MDBInput wrapperClass='mb-4' label='Username' id='form1' type='text'/>
-          <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email'/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/>
-
-          <div className='d-flex justify-content-center mb-4'>
-            <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I have read and agree to the terms' />
-          </div>
-
-          <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
-
-        </MDBTabsPane>
-
-      </MDBTabsContent>
-      <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email'/>
-      <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password'/>
-
-      <div className="d-flex justify-content-between mx-3 mb-4">
-        <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
-        <a href="!#">Forgot password?</a>
-      </div>
-    <div>
-    <a href="/agenda">
-      <MDBBtn className="mb-4">Sign in</MDBBtn>
-    </a>
-    </div>
-
-      <div className="text-center">
-        <p>Not a member? Register</p>
-        <p>or sign up with:</p>
-
-        <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
-          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-            <MDBIcon fab icon='facebook-f' size="sm"/>
-          </MDBBtn>
-
-          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-            <MDBIcon fab icon='twitter' size="sm"/>
-          </MDBBtn>
-
-          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-            <MDBIcon fab icon='google' size="sm"/>
-          </MDBBtn>
-
-          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
-            <MDBIcon fab icon='github' size="sm"/>
-          </MDBBtn>
-
-        </div>
-      </div>
+    <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image'>
+      <div className='mask gradient-custom-3'></div>
+      <MDBCard className='m-5'>
+        <MDBCardBody className='px-5'>
+          <h2 className="text-uppercase text-center mb-5">Create an account</h2>
+          <MDBInput wrapperClass='mb-4' label='Your Name' size='lg' id='form1' type='text'/>
+          <MDBInput wrapperClass='mb-4' label='Your Email' size='lg' id='form2' type='email'/>
+          <MDBInput wrapperClass='mb-4' label='Password' size='lg' id='form3' type='password'/>
+          <MDBInput wrapperClass='mb-4' label='Repeat your password' size='lg' id='form4' type='password'/>
+          <MDBBtn className='mb-4 w-100 gradient-custom-4' size='lg' href='./agenda'>Register</MDBBtn>
+        </MDBCardBody>
+      </MDBCard>
     </MDBContainer>
   );
 }
