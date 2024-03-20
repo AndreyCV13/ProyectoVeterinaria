@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DateCalendarValue from '../components/component';
 import {
   MDBContainer,
   MDBTabs,
@@ -24,9 +25,10 @@ function App() {
 
     setJustifyActive(value);
   };
-  
+
   return (
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
+
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
         <MDBTabsItem>
           <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
@@ -41,7 +43,7 @@ function App() {
       </MDBTabs>
 
       <MDBTabsContent>
-
+        
         <MDBTabsPane show={justifyActive === 'tab1'}>
 
           <div className="text-center mb-3">
@@ -128,11 +130,14 @@ function App() {
         <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
         <a href="!#">Forgot password?</a>
       </div>
-
+    <div>
+    <a href="/agenda">
       <MDBBtn className="mb-4">Sign in</MDBBtn>
+    </a>
+    </div>
 
       <div className="text-center">
-        <p>Not a member? <a href="#!">Register</a></p>
+        <p>Not a member? Register</p>
         <p>or sign up with:</p>
 
         <div className='d-flex justify-content-between mx-auto' style={{width: '40%'}}>
@@ -154,7 +159,6 @@ function App() {
 
         </div>
       </div>
-
     </MDBContainer>
   );
 }
