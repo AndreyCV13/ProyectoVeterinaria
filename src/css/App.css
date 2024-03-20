@@ -24,6 +24,10 @@
   color: white;
 }
 
+#register{
+  margin-top: 12rem;
+}
+
 body{
   /* fallback for old browsers */
   background: #84fab0;

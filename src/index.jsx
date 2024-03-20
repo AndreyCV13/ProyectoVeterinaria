@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import App from './routes/App.jsx';
-import Agenda from './routes/agenda.jsx';
+import Register from './routes/Register.jsx';
+import Agenda from './routes/Agenda.jsx';
+import Home from './routes/Home.jsx';
 import ErrorPage from './error-page.jsx';
 
 import {
@@ -16,12 +17,16 @@ import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Register />,
     errorElement: <ErrorPage />
   },
   {
-    path: "/agenda",
+    path: "/Agenda",
     element: <Agenda />,
+  },
+  {
+    path: "/Home",
+    element: <Home />,
   },
 ]);
 
