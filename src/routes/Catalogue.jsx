@@ -15,15 +15,18 @@ function Catalogue(){
     <div className='mask gradient-custom-3' id="colorRegister"></div>
     <MDBCard  id="contact">
       <MDBCardBody className='px-5'>
+      <div className="left">
         <img src={comidaIMG} alt="comida1"/>
         <p>Comida para Perros Marca XXXXX </p>
         <p>Precio: $ XXXX </p>
         <MDBBtn className='mb-4 w-100 gradient-custom-4' size='lg'>Hacer comprar</MDBBtn>
-
+      </div>
+      <div className="right">
         <img src={jugueteIMG} alt="juguete1"/>
         <p>Paquete de Juguetes para Mascotas </p>
         <p>Precio: $ XXXX </p>
         <MDBBtn className='mb-4 w-100 gradient-custom-4' size='lg'>Hacer comprar</MDBBtn>
+      </div>
       </MDBCardBody>
     </MDBCard>
   </MDBContainer>
