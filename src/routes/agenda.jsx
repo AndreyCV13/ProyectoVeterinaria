@@ -1,14 +1,13 @@
 import React from 'react';
-import DateCalendarValue from '../components/component';
-import { MDBContainer} from 'mdb-react-ui-kit';
+import { MDBContainer } from 'mdb-react-ui-kit';
+import DateCalendarValue from '../components/dateCalendar';
+import Nav from '../components/NavigationBar'; 
 
-function Agenda() {
-
+export default function Agenda() {
   return (
-    <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
+    <div>
+        <Nav/>
         <DateCalendarValue/>
-    </MDBContainer>
+    </div>
   );
 }
-
-export default Agenda;

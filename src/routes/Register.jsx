@@ -12,7 +12,7 @@ from 'mdb-react-ui-kit';
 function Register() {
   return (
     <MDBContainer fluid className='d-flex align-items-center justify-content-center'>
-      <div className='mask gradient-custom-3' id="colorRegister"></div>
+      <div className='mask gradient-custom-3' id="colorRegister"> </div>
       <MDBCard  id="register">
         <MDBCardBody className='px-5'>
           <h2 className="text-uppercase text-center mb-5">Create an account</h2>

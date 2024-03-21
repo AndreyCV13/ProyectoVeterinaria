@@ -1,0 +1,9 @@
+#colorTexto{
+  color: white;
+}
+
+.borderList{
+    display:inline-block;
+    border:1px solid #fff;
+    margin: auto;
+}
