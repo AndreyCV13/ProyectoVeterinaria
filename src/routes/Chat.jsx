@@ -5,6 +5,7 @@ import {
   MDBCardBody
 } from 'mdb-react-ui-kit';
 import '../css/Chat.css';
+import Nav from '../components/NavigationBar'; 
 
 const ChatComponent = () => {
   const [messages, setMessages] = useState([
@@ -49,8 +50,9 @@ const ChatComponent = () => {
 
 function Chat() {
   return (
-    <MDBContainer fluid className='d-flex align-items-center justify-content-right'>
-    <div className='mask gradient-custom-3' id="colorRegister"></div>
+  <div>
+    <Nav/>
+    <MDBContainer fluid className='d-flex align-items-center justify-content-center mt-5'>
     <MDBCard  id="contact">
       <MDBCardBody className='px-5'>
       <div className="left">
@@ -60,6 +62,7 @@ function Chat() {
       </MDBCardBody>
     </MDBCard>
   </MDBContainer>
+</div>
   );
 }
 

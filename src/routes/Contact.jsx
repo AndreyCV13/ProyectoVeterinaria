@@ -7,7 +7,7 @@ function Contact(){
   return(
   <div>
     <Nav/>
-    <MDBContainer fluid className='d-flex align-items-center justify-content-center'>
+    <MDBContainer fluid className='d-flex align-items-center justify-content-center mt-5'>
       <MDBCard  id="contact">
         <MDBCardBody className='px-5'>
           <img src={veterinarioIMG} alt="Veterinario1"/>

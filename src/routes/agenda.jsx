@@ -7,7 +7,7 @@ export default function Agenda() {
   return (
     <div>
     <Nav/>
-    <MDBContainer fluid className='d-flex align-items-center justify-content-center'>
+    <MDBContainer fluid className='d-flex align-items-center justify-content-center mt-5'>
         <DateCalendarValue/>
     </MDBContainer>
     </div>
