@@ -21,7 +21,7 @@ export default function Nav() {
           <div className="vr" style={{ height: '40px' }}></div>
 
           <MDBNavbarItem className='mx-3'>
-                <MDBNavbarLink href='#' id="colorTexto">Catálogo</MDBNavbarLink>
+                <MDBNavbarLink href='./Catalogue' id="colorTexto">Catálogo</MDBNavbarLink>
             </MDBNavbarItem>
 
             <div className="vr" style={{ height: '40px' }}></div>

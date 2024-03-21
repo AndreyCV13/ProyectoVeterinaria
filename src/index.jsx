@@ -5,7 +5,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Contact from './routes/Contact.jsx';
 import Catalogue from './routes/Catalogue.jsx';
-import Chat from './routes/Catalogue.jsx'
+import Chat from './routes/Chat.jsx'
 import Register from './routes/Register.jsx';
 import Agenda from './routes/Agenda.jsx';
 import Home from './routes/Home.jsx';
