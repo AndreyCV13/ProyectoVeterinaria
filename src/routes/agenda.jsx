@@ -1,13 +1,15 @@
 import React from 'react';
-import { MDBContainer } from 'mdb-react-ui-kit';
+import { MDBContainer} from 'mdb-react-ui-kit';
 import DateCalendarValue from '../components/dateCalendar';
 import Nav from '../components/NavigationBar'; 
 
 export default function Agenda() {
   return (
     <div>
-        <Nav/>
+    <Nav/>
+    <MDBContainer fluid className='d-flex align-items-center justify-content-center'>
         <DateCalendarValue/>
+    </MDBContainer>
     </div>
   );
 }
