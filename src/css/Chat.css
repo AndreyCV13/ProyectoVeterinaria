@@ -1,11 +1,12 @@
-.chat-container {
+    /* Chat Container */  
+.chat-container { 
     width: 300px;
     margin: 20px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
   }
-  
+    /* For messages */  
   .chat-messages {
     height: 300px;
     overflow-y: scroll;
