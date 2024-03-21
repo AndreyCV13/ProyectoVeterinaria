@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Chat from './routes/Chat.jsx';
 import Catalogue from './routes/Catalogue.jsx';
 import Contact from './routes/Contact.jsx';
 import Register from './routes/Register.jsx';
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/Catalogue",
     element: <Catalogue/>
+  },
+  {
+    path: "/Chat",
+    element: <Chat />
   }
 ]);
 
