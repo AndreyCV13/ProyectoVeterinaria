@@ -13,6 +13,15 @@
   }
 }
 
+.titleHome{
+  margin-right: 50px;
+}
+
+.catalog{
+  width: 200px;
+  height: 200px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

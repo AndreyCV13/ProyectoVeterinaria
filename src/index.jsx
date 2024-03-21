@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Chat from './routes/Chat.jsx';
-import Catalogue from './routes/Catalogue.jsx';
-import Contact from './routes/Contact.jsx';
 import Register from './routes/Register.jsx';
-import Agenda from './routes/Agenda.jsx';
+import Agenda from './routes/cgenda.jsx';
 import Home from './routes/Home.jsx';
 import ErrorPage from './error-page.jsx';
 
@@ -31,18 +28,6 @@ const router = createBrowserRouter([
     path: "/Home",
     element: <Home />,
   },
-  {
-    path: "/Contact",
-    element: <Contact />
-  },
-  {
-    path: "/Catalogue",
-    element: <Catalogue/>
-  },
-  {
-    path: "/Chat",
-    element: <Chat />
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

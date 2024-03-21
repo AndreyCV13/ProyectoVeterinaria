@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
 import {
-  MDBBtn,
   MDBContainer,
   MDBCard,
-  MDBCardBody,
-  MDBInput
+  MDBCardBody
 } from 'mdb-react-ui-kit';
 import '../css/Chat.css';
 

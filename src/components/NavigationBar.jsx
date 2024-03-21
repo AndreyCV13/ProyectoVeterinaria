@@ -18,22 +18,31 @@ export default function Nav() {
 
           <MDBNavbarNav className='ms-auto mb-2 mb-lg-0'>
 
+          <div className="vr" style={{ height: '40px' }}></div>
+
           <MDBNavbarItem className='mx-3'>
                 <MDBNavbarLink href='#' id="colorTexto">Catálogo</MDBNavbarLink>
             </MDBNavbarItem>
+
+            <div className="vr" style={{ height: '40px' }}></div>
 
             <MDBNavbarItem className='mx-3'>
                 <MDBNavbarLink href='./Agenda' id="colorTexto">Agenda</MDBNavbarLink>
             </MDBNavbarItem>
 
+            <div className="vr" style={{ height: '40px' }}></div>
+
             <MDBNavbarItem className='mx-3'>
-                <MDBNavbarLink href='#' id="colorTexto">Consultorio</MDBNavbarLink>
+                <MDBNavbarLink href='#' id="colorTexto">Mascotas</MDBNavbarLink>
             </MDBNavbarItem>
+
+            <div className="vr" style={{ height: '40px' }}></div>
 
             <MDBNavbarItem className='mx-3'>
               <MDBNavbarLink active aria-current='page' href='./Contact' id="colorTexto"> Contacto </MDBNavbarLink>
             </MDBNavbarItem>
 
+            <div className="vr" style={{ height: '40px' }}></div>
             <MDBNavbarItem className='mx-3 ms-auto'>
               <MDBNavbarLink active aria-current='page' href='/' id="colorTexto"> Usuario </MDBNavbarLink>
             </MDBNavbarItem>

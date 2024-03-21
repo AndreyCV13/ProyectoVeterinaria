@@ -6,7 +6,6 @@ import {
   MDBContainer,
   MDBCard,
   MDBCardBody,
-  MDBInput
 } from 'mdb-react-ui-kit';
 
 function Catalogue(){
