@@ -26,8 +26,8 @@ function Catalogue(){
           <MDBCardBody className='px-5'>
             <div className="left">
               <img src={comidaIMG} alt="comida1"/>
-              <p>Comida para Perros Marca XXXXX </p>
-              <p>Precio: $ XXXX </p>
+              <p>Comida para Perros Marca GUAUS </p>
+              <p>Precio: $ 3 </p>
               <MDBBtn
                 className='mb-4 w-100 gradient-custom-4'
                 size='lg'
@@ -39,7 +39,7 @@ function Catalogue(){
             <div className="right">
               <img src={jugueteIMG} alt="juguete1"/>
               <p>Paquete de Juguetes para Mascotas </p>
-              <p>Precio: $ XXXX </p>
+              <p>Precio: $ 10 </p>
               <MDBBtn
                 className='mb-4 w-100 gradient-custom-4'
                 size='lg'
