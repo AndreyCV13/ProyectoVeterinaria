@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
     <Nav/>
-    <MDBContainer fluid className='m-5 titleHome'>
+    <MDBContainer fluid className='my-5 ml-5 titleHome'>
         <h1 className='m-3' id="titleHome">Informacion de la veterinaria</h1>
 
         <hr className="hr m-4"/>

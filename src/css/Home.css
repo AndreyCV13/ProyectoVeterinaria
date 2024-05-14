@@ -12,3 +12,7 @@
   margin: auto;
   text-align: center;
 }
+
+.displayColumn{
+  flex-direction: column;
+}
