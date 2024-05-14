@@ -11,8 +11,8 @@ function Contact(){
       <MDBCard  id="contact">
         <MDBCardBody className='px-5'>
           <img src={veterinarioIMG} alt="Veterinario1"/>
-          <p>Email: veterinario@gmail</p>
-          <p>Phone: XXXX-XXXX </p>
+          <p>Email: lucas_delgado@gmail</p>
+          <p>Phone: +590 9782-1300 </p>
         </MDBCardBody>
       </MDBCard>
     </MDBContainer>

@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <MDBNavbar expand='lg' light bgColor='dark' color="indigo">
       <MDBContainer fluid>
-        <MDBNavbarBrand color='warning' href='./Home' id="colorTexto">NombreVeterinaria</MDBNavbarBrand>
+        <MDBNavbarBrand color='warning' href='./Home' id="colorTexto">Nosotros</MDBNavbarBrand>
 
           <MDBNavbarNav className='ms-auto mb-2 mb-lg-0'>
 
