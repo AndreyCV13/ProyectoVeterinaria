@@ -6,7 +6,7 @@ import Contact from './routes/Contact.jsx';
 import Catalogue from './routes/Catalogue.jsx';
 import Chat from './routes/Chat.jsx'
 import Register from './routes/Register.jsx';
-import Agenda from './routes/agenda.jsx';
+import Agenda from './routes/Agenda.jsx';
 import Home from './routes/Home.jsx';
 import ErrorPage from './error-page.jsx';
 
