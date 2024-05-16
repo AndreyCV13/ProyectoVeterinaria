@@ -8,6 +8,7 @@ import Chat from './routes/Chat.jsx'
 import Register from './routes/Register.jsx';
 import Agenda from './routes/Agenda.jsx';
 import Home from './routes/Home.jsx';
+import User from './routes/User.jsx';
 import ErrorPage from './error-page.jsx';
 
 import {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/Catalogue",
     element: <Catalogue />,
+  },
+  {
+    path: "/User",
+    element: <User />,
   },
 ]);
 

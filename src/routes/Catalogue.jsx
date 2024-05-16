@@ -19,35 +19,53 @@ function Catalogue(){
   };
 
   return(
-    <div>
+    <div className='gradient-custom-4'>
       <Nav/>
-      <MDBContainer fluid className='d-flex align-items-center justify-content-center mt-5'>
-        <MDBCard  id="contact">
-          <MDBCardBody className='px-5'>
-            <div className="left">
-              <img src={comidaIMG} alt="comida1"/>
+      <h1 className='my-5 p-2 w-50' id="titleHome" style={{background: 'white', borderRadius: '20px'}}>Productos de Mascotas Felices</h1>
+      <MDBContainer fluid className='d-flex m-auto align-items-center justify-content-center mt-5'>  
+        <MDBCard className='m-3 col-md-3' id="contact">
+          <MDBCardBody className='d-flex displayColumn align-items-center justify-content-center'>
+              <img className='w-50' src={comidaIMG} alt="comida1"/>
               <p>Comida para Perros Marca GUAUS </p>
-              <p>Precio: $ 3 </p>
+              <p>Precio: $3 </p>
               <MDBBtn
-                className='mb-4 w-100 gradient-custom-4'
+                outline color='success'
+                className='mb-4 w-75'
                 size='lg'
                 onClick={toggleButtonText}
               >
                 {toggleFlag ? "Quitar del Carrito" : "Añadir al Carrito"}
               </MDBBtn>
-            </div>
-            <div className="right">
-              <img src={jugueteIMG} alt="juguete1"/>
+          </MDBCardBody>
+        </MDBCard>
+        <MDBCard className='m-3 col-md-3' id="contact">
+          <MDBCardBody className='d-flex displayColumn align-items-center justify-content-center'>
+              <img className='w-50' src={jugueteIMG} alt="juguete1"/>
               <p>Paquete de Juguetes para Mascotas </p>
-              <p>Precio: $ 10 </p>
+              <p>Precio: $10 </p>
               <MDBBtn
-                className='mb-4 w-100 gradient-custom-4'
+                outline color='success'
+                className='mb-4 w-75'
                 size='lg'
                 onClick={toggleButtonText}
               >
                 {toggleFlag ? "Quitar del Carrito" : "Añadir al Carrito"}
               </MDBBtn>
-            </div>
+          </MDBCardBody>
+        </MDBCard>
+        <MDBCard className='m-3 col-md-3' id="contact">
+          <MDBCardBody className='d-flex displayColumn align-items-center justify-content-center'>
+              <img className='w-50' src={comidaIMG} alt="comida1"/>
+              <p>Comida para Perros Marca GUAUS </p>
+              <p>Precio: $3 </p>
+              <MDBBtn
+                outline color='success'
+                className='mb-4 w-75'
+                size='lg'
+                onClick={toggleButtonText}
+              >
+                {toggleFlag ? "Quitar del Carrito" : "Añadir al Carrito"}
+              </MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBContainer>

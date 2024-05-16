@@ -10,12 +10,11 @@ import {
   MDBModalFooter,
 } from 'mdb-react-ui-kit';
 
-export default function BasicModal({calendar, service}) {
+export default function AgendaModal({calendar, service}) {
   const [basicModal, setBasicModal] = useState(false);
   const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
   'Junio', 'Julio', 'Agosto', 'Setiembre', 'Octubre', 'Noviembre', 'Diciembre'];
   const toggleOpen = () => setBasicModal(!basicModal);
-
 
   return (
     <>

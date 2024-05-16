@@ -44,7 +44,7 @@ export default function Nav() {
 
             <div className="vr" style={{ height: '40px' }}></div>
             <MDBNavbarItem className='mx-3 ms-auto'>
-              <MDBNavbarLink active aria-current='page' href='/' id="colorTexto"> Usuario </MDBNavbarLink>
+            <MDBNavbarLink active aria-current='page' href='./User' id="colorTexto"> Andrey Calvo </MDBNavbarLink>
             </MDBNavbarItem>
 
           </MDBNavbarNav>

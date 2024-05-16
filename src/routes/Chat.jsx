@@ -50,9 +50,10 @@ const ChatComponent = () => {
 
 function Chat() {
   return (
-  <div>
+  <div className='gradient-custom-4'>
     <Nav/>
-    <MDBContainer fluid className='d-flex align-items-center justify-content-center mt-5'>
+    <MDBContainer fluid style={{background: '#EEEEEE'}}className='d-flex displayColumn align-items-center justify-content-center p-5 w-50'>
+    <h1 className='mb-5' id="titleHome">Chat con encargado</h1>
     <MDBCard  id="contact">
       <MDBCardBody className='px-5'>
       <div className="left">

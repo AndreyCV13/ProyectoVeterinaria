@@ -5,7 +5,7 @@ import { MDBContainer} from 'mdb-react-ui-kit';
 import DateCalendarValue from '../components/dateCalendar';
 import Nav from '../components/NavigationBar'; 
 import Dropdown from '../components/dropdown';
-import BasicModal from '../components/basicModal';
+import AgendaModal from '../components/agendaModal';
 
 export default function Agenda() {
   const [calendar, setCalendar] = useState(dayjs('2022-04-17'));
@@ -29,7 +29,7 @@ export default function Agenda() {
           <DateCalendarValue changeDate={changeDate}/>
         </div>
         <Dropdown changeService={changeService}/>
-        <BasicModal calendar={calendar} service={service}/>
+        <AgendaModal calendar={calendar} service={service}/>
     </MDBContainer>
     </div>
   );

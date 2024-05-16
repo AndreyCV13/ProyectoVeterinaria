@@ -6,9 +6,9 @@ import Nav from '../components/NavigationBar';
 export default function Home() {
 
   return (
-    <div>
+    <div className='gradient-custom-4'>
     <Nav/>
-    <MDBContainer fluid className='my-5  px-5 titleHome'>
+    <MDBContainer fluid style={{background: 'white'}} className='py-5 w-75'>
         <h1 className='m-3' id="titleHome">Nosotros</h1>
 
         <hr className="hr m-4"/>
